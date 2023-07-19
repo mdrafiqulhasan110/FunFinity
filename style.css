@@ -22,7 +22,7 @@ a{
 nav{
     display: flex;
 justify-content: space-between;
-    padding: 20px 0px;
+    padding: 30px 0px;
 }
 nav a{
     display: flex;
@@ -49,6 +49,163 @@ nav a{
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 0 10px;
+    padding: 5px 10px;
     border-radius: 8px;
     background: rgba(11, 2, 35, 0.10);}
+
+
+
+.banner{
+    background-image: url(./Images/Group\ 14.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height:35vw ;
+}
+
+.banner .row{
+    display: flex;
+    align-items: center;
+
+}
+
+.banner .col1 , .banner .col2 {
+    width: 50%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.title{
+    font-size: 2rem;
+    line-height: 2em;
+}
+
+.banner .col2 img{
+    width: auto;
+}
+
+.feature i{
+    color: #9C27B0;
+    margin-right: 5px;
+}
+
+.feature p{
+    margin-bottom: 10px;
+}
+
+.btn1 a, .btn2 a{
+text-decoration: none;
+color: white;
+}
+.btn1, .btn2 {
+    padding: 10px 15px;
+    border-radius:25px;
+    border: none;
+    }
+
+.btn1{
+    background-color: #9C27B0;
+}
+.btn2{
+    background-color: tomato;
+}
+
+
+.game{
+    padding: 50px 0 30px 0;
+    text-align: center;
+    background-color: #FFF9FC;
+}
+
+.games{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    width: 24%;
+}
+.imagebox{
+    position: relative;
+
+}
+.hidden{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: rgba(14, 14, 14, 0.5);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    border-radius: 8px;
+    border: 3px solid tomato;
+}
+
+.imagebox:hover .hidden{
+    display: flex;
+}
+.hidden button{
+    margin: none;
+    width: fit-content;
+}
+
+.imagebox img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 426px) {
+    nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .menu{
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+.banner .col1 , .banner .col2 {
+    width: 50%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    gap: 20px;
+}
+.banner{
+    height: auto;
+    padding: 20px 0;
+}
+    .banner .row{
+        flex-direction: column;
+        row-gap: 50px;
+    }
+
+
+    .banner .col1, .banner .col2{
+        width: 100%;
+    }
+}
