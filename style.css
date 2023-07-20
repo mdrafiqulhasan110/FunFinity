@@ -408,36 +408,46 @@ footer h2 {
     }
 
     .banner {
+        background-image: none;
         height: auto;
         padding: 60px 0;
     }
 
     .banner .row {
         height: auto;
-        flex-direction: column;
+        flex-direction: column-reverse;
         row-gap: 50px;
     }
+.banner .col1{
+    width: 100%;
+    background-image: url(./Images/Group\ 14.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 50px 0 50px 25%;
 
+}
 
     .banner .col1,
     .banner .col2 {
         width: 100%;
     }
 
-
+.types .row{
+    gap: 0;
+}
 
     .box a {
         font-size: .4em;
     }
 
     .box img {
-        width: 25px;
+        width: 15px;
     }
 
     .box {
         min-width: 30%;
-        gap: 5px;
-        padding: 10px 5px;
+        gap: 2px;
+        padding: 5px 5px;
     }
 
     
@@ -466,7 +476,7 @@ footer h2 {
 
 .advert .col2 {
     margin-top: 45px;
-    width: 70%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -487,7 +497,4 @@ footer h2 {
     width:100%;
 }
 
-.banner .col1{
-    margin-left: 40%;
-}
 }
